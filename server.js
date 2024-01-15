@@ -63,5 +63,6 @@ server.delete('/videos/:id', async (request, reply) => {  // esta rota será pel
 })
 
 server.listen({  //passa um obj para poder instaciar a porta
+    host: '0.0.0.0',
     port: process.env.PORT ?? 3333,  //porta da servidor e também para o Render designar um porta automaticamente
 })
